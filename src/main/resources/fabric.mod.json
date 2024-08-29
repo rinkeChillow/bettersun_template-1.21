@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "better-sun",
+	"version": "${version}",
+	"name": "better sun",
+	"description": "make the sun and the moon face the player fro better texture pack making ",
+	"authors": [
+		"rinke_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/better-sun/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.rinke.bettersun.BetterSun"
+		],
+		"client": [
+			"net.rinke.bettersun.BetterSunClient"
+		],
+		"fabric-datagen": [
+			"net.rinke.bettersun.BetterSunDataGenerator"
+		]
+	},
+	"mixins": [
+		"better-sun.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
